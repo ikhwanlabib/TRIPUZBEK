@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uzbekistan 22-28 November 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f7f8;--card:#fff;--ink:#10202f;--mute:#5a6b7a;--line:#d7e1e6;--lapis:#14305c;--teal:#1fa3a8;--gold:#e7a93b;--onhero:#fff}
+:root[data-theme=dark]{--bg:#0d1a26;--card:#13263a;--ink:#e8f0f5;--mute:#93a6b6;--line:#243c52;--lapis:#0a1d38}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1a26;--card:#13263a;--ink:#e8f0f5;--mute:#93a6b6;--line:#243c52;--lapis:#0a1d38}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;margin:0;line-height:1.1}
+.hero{background:var(--lapis);color:var(--onhero);padding:2.5rem 1.25rem 2rem;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;opacity:.18;background:
+conic-gradient(from 45deg at 50% 50%,var(--teal) 0 25%,transparent 0 50%,var(--teal) 0 75%,transparent 0) 0 0/56px 56px,
+radial-gradient(circle at 50% 50%,transparent 0 10px,var(--gold) 11px 12px,transparent 13px) 0 0/56px 56px}
+.wrap{max-width:860px;margin:0 auto;position:relative}
+.hero h1{font-size:clamp(2.2rem,8vw,4rem);font-weight:800;letter-spacing:-.02em}
+.hero p{margin:.6rem 0 0;max-width:52ch;opacity:.9}
+.cd{display:flex;gap:.6rem;margin-top:1.5rem;flex-wrap:wrap}
+.cd div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:.5rem .9rem;min-width:72px;text-align:center}
+.cd b{display:block;font:800 1.8rem "Bricolage Grotesque",sans-serif}
+.cd span{font-size:.8rem;opacity:.85}
+.clocks{display:flex;gap:1.5rem;margin-top:1rem;font-size:.9rem;flex-wrap:wrap}
+.clocks b{color:var(--gold)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:.4rem;overflow-x:auto;padding:.6rem 1.25rem;max-width:860px;margin:0 auto}
+.tabs button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.9rem;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--teal);border-color:var(--teal);color:#04282a;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:1.25rem}
+section{margin-bottom:2rem}
+.dayhead{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:.8rem}
+.dayhead h2{font-size:1.7rem}
+.wx{font-size:.9rem;color:var(--mute)}
+.stop{display:grid;grid-template-columns:auto 1fr auto;gap:.75rem;align-items:start;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:8px;padding:.8rem 1rem;margin-bottom:.6rem}
+.stop.done{opacity:.55;border-left-color:var(--gold)}
+.stop.done .nm{text-decoration:line-through}
+.stop input{width:1.2rem;height:1.2rem;margin-top:.2rem;accent-color:var(--teal)}
+.nm{font-weight:600}.tm{font-size:.85rem;color:var(--mute)}.bl{font-size:.92rem;color:var(--mute);margin-top:.15rem}
+a.map{font-size:.85rem;color:var(--teal);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:.25rem .55rem;white-space:nowrap}
+a.map:hover,button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+textarea,input[type=text],input[type=number]{width:100%;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.55rem .7rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem;margin-bottom:1rem}
+.panel h3{font-size:1.2rem;margin-bottom:.6rem}
+.prog{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:.4rem 0 1rem}
+.prog i{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
+.row{display:flex;gap:.5rem;margin-bottom:.5rem}.row>*{min-width:0}
+.btn{border:0;background:var(--lapis);color:#fff;border-radius:8px;padding:.5rem .9rem;font:inherit;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+li.chk{list-style:none;display:flex;gap:.6rem;align-items:center;padding:.3rem 0;border-bottom:1px solid var(--line)}
+ul{padding:0;margin:0}
+.x{margin-left:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem}td,th{text-align:left;padding:.4rem .3rem;border-bottom:1px solid var(--line)}
+.tools{display:grid;gap:1rem}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:1.5rem}
+.top{display:flex;gap:.5rem;position:absolute;right:0;top:-1.2rem}
+.top button{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:.3rem .6rem;cursor:pointer;font:inherit;font-size:.85rem}
+#sy[data-s=on]{color:#7be0a0}#sy[data-s=off]{color:var(--gold)}
+@media print{.bar,.top,.btn,textarea,footer{display:none}.hero{color:#000;background:#fff}.hero:before{display:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="top"><button id="sh" type="button">Salin tautan</button><button id="th" type="button">Mode gelap</button><button onclick="print()" type="button">Cetak</button></div>
+<h1>Uzbekistan,<br>22-28 November 2026</h1>
+<p>Tashkent, Amirsoy, Samarkand, Bukhara. Pesawat mendarat 22 Nov 00:40, pulang 28 Nov 07:40.</p>
+<div class="cd" id="cd" aria-live="off"></div>
+<div class="clocks"><span>Tashkent <b id="ck1"></b></span><span>Jakarta (WIB) <b id="ck2"></b></span><span>Selisih 2 jam</span><span id="sy"></span></div>
+</div></header>
+<div class="bar"><nav class="tabs" id="tabs" role="tablist" aria-label="Hari perjalanan"></nav></div>
+<main>
+<section id="day"></section>
+<section class="tools">
+<div class="panel"><h3>Progres perjalanan</h3><div id="pt"></div><div class="prog"><i id="pb"></i></div></div>
+<div class="panel"><h3>Daftar bawaan</h3>
+<form class="row" id="pf"><input type="text" id="pi" placeholder="Tambah barang" aria-label="Tambah barang"><button class="btn">Tambah</button></form><ul id="pl"></ul></div>
+<div class="panel"><h3>Pengeluaran</h3>
+<div class="row"><label style="flex:1">Kurs: Rp per 1 UZS<input type="number" id="rate" value="1.30" step="0.01" min="0"></label></div>
+<form class="row" id="ef"><input type="text" id="el" placeholder="Keterangan" aria-label="Keterangan"><input type="number" id="ea" placeholder="Jumlah UZS" min="0" aria-label="Jumlah UZS"><button class="btn">Catat</button></form>
+<ul id="el2"></ul><p><b id="et"></b></p>
+<p class="wx">Isi kurs sesuai hasil tukar uang terakhir. Angka bawaan hanya contoh.</p></div>
+<div class="panel"><h3>Penginapan</h3>
+<table><tr><th>Malam</th><th>Kota</th></tr>
+<tr><td>21, 22, 23 Nov</td><td>Tashkent (pesan mulai 21 Nov agar bisa masuk 00:40)</td></tr>
+<tr><td>24 Nov</td><td>Samarkand</td></tr><tr><td>25, 26 Nov</td><td>Bukhara</td></tr>
+<tr><td>27 Nov</td><td>Tashkent (berangkat ke bandara 03:30-04:00)</td></tr></table></div>
+<div class="panel"><h3>Info penting</h3><ul>
+<li class="chk">Darurat: pemadam 101, polisi 102, ambulans 103</li>
+<li class="chk">Colokan listrik tipe C/F, 220V</li>
+<li class="chk">Aplikasi taksi: Yandex Go. Tiket kereta: railway.uz atau agen</li>
+<li class="chk">Siapkan uang tunai, terutama untuk bazar</li>
+<li class="chk">Cek jadwal kereta 24, 25, 27 Nov dan status Amirsoy sebelum berangkat</li></ul></div>
+<div class="panel"><h3>Kata berguna (Uzbek)</h3><table>
+<tr><td>Salom</td><td>Halo</td></tr><tr><td>Rahmat</td><td>Terima kasih</td></tr>
+<tr><td>Iltimos</td><td>Tolong / silakan</td></tr><tr><td>Qancha?</td><td>Berapa harganya?</td></tr>
+<tr><td>Ha / Yo'q</td><td>Ya / Tidak</td></tr><tr><td>Hojatxona qayerda?</td><td>Toilet di mana?</td></tr></table></div>
+</section>
+</main>
+<footer>Dibuat untuk perjalanan keluarga. Data tersimpan di browser ini saja.</footer>
+<script>
+const D=[
+{d:"22 Nov",dt:"2026-11-22",c:0,city:"Tashkent",t:"Tashkent, hari pertama",s:[["00:40","Mendarat dan ke hotel","Langsung istirahat. Hotel dipesan mulai malam 21 Nov.","Tashkent International Airport"],["11:00","Hazrati Imam Complex","Masjid, madrasah, Quran Utsman.","Hazrati Imam Complex Tashkent"],["12:30","Islamic Civilization Center","Cek status buka dulu. Kalau belum buka, skip.","Center of Islamic Civilization Tashkent"],["13:30","Chorsu Bazaar","Makan siang dan suvenir.","Chorsu Bazaar Tashkent"],["16:00","Naik Metro Tashkent","Pilih 3-4 stasiun terbaik.","Tashkent Metro Kosmonavtlar station"],["18:00","Amir Temur Park / Square","Foto monumen, makan malam plov.","Amir Temur Square Tashkent"]]},
+{d:"23 Nov",dt:"2026-11-23",c:0,city:"Tashkent",t:"Amirsoy dan Chimgan",s:[["08:00","Berangkat ke Amirsoy","Mobil dengan driver, sekitar 1,5-2 jam.","Amirsoy Resort"],["10:00","Amirsoy","Cable car dan pemandangan. Cek operasional dulu.","Amirsoy Resort"],["13:30","Bukit Chimgan","Mampir kalau cuaca dan tenaga mendukung.","Chimgan Mountain"],["16:00","Kembali ke Tashkent","","Tashkent"]]},
+{d:"24 Nov",dt:"2026-11-24",c:1,city:"Samarkand",t:"Ke Samarkand",s:[["Pagi","Kereta Afrosiyob ke Samarkand","Sekitar 2 jam. Ambil kereta paling pagi.","Tashkent railway station"],["Siang","Check-in hotel Samarkand","","Samarkand"],["Sore","Registan Square","Datang menjelang sore, lampu menyala.","Registan Samarkand"],["Sore","Gur-e-Amir Mausoleum","Makam Timur, dekat Registan.","Gur-e-Amir Samarkand"]]},
+{d:"25 Nov",dt:"2026-11-25",c:1,city:"Samarkand",t:"Samarkand ke Bukhara",s:[["08:30","Shah-i-Zinda","Kompleks makam berubin biru, ada tangga.","Shah-i-Zinda Samarkand"],["11:00","Bibi-Khanym dan Siyob Bazaar","Beli roti non Samarkand.","Bibi-Khanym Mosque Samarkand"],["Siang","Kereta ke Bukhara","Sekitar 1,5 jam.","Samarkand railway station"],["Sore","Lyabi-Hauz","Plaza pusat Bukhara. Makan malam di sini.","Lyabi Hauz Bukhara"]]},
+{d:"26 Nov",dt:"2026-11-26",c:2,city:"Bukhara",t:"Bukhara satu hari penuh",s:[["09:00","Ark Fortress dan Kalon Complex","Benteng, masjid dan menara Kalon.","Ark of Bukhara"],["12:00","Trading Domes dan Chor Minor","Mudah dijangkau jalan kaki.","Chor Minor Bukhara"],["Sore","Santai, makan, belanja","","Bukhara old town"]]},
+{d:"27 Nov",dt:"2026-11-27",c:0,city:"Tashkent",t:"Kembali ke Tashkent",s:[["Pagi","Kereta Bukhara ke Tashkent","Sekitar 4 jam. Cek jadwal pagi.","Bukhara railway station"],["Siang","Tashkent City Mall","Makan siang dan oleh-oleh.","Tashkent City Mall"],["Sore","Seoul Mun Park","Taman bergaya Korea.","Seoul Mun Park Tashkent"],["Malam","Magic City Park","Wahana outdoor bisa terbatas di musim dingin.","Magic City Tashkent"],["Malam","Kembali ke hotel","Keluar sekitar 03:30-04:00.","Tashkent"]]},
+{d:"28 Nov",dt:"2026-11-28",c:0,city:"Tashkent",t:"Pulang",s:[["03:30","Ke bandara","Tiba 3 jam sebelum penerbangan.","Tashkent International Airport"],["07:40","Penerbangan pulang","","Tashkent International Airport"]]}
+];
+const $=id=>document.getElementById(id);
+const L=(k,f)=>{try{return JSON.parse(localStorage.getItem(k))??f}catch(e){return f}};
+const S=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let done=L("done",{}),notes=L("notes",{}),sel=0,wx=null;
+const today=new Date().toISOString().slice(0,10),ti=D.findIndex(x=>x.dt===today);if(ti>=0)sel=ti;
+function tabs(){$("tabs").innerHTML=D.map((x,i)=>`<button role="tab" aria-selected="${i===sel}" data-i="${i}">${x.d}</button>`).join("")}
+$("tabs").onclick=e=>{const b=e.target.closest("button");if(b){sel=+b.dataset.i;tabs();day()}};
+function day(){const x=D[sel];let w="";
+if(wx&&wx[x.c]){const q=wx[x.c].daily,j=q.time.indexOf(x.dt);if(j>=0)w=`Prakiraan ${x.city}: ${Math.round(q.temperature_2m_min[j])}° sampai ${Math.round(q.temperature_2m_max[j])}°C`}
+$("day").innerHTML=`<div class="dayhead"><div><div class="tm">${x.city}</div><h2>${x.d}: ${x.t}</h2></div><div class="wx">${w}</div></div>`+
+x.s.map((s,i)=>{const k=sel+"-"+i;return`<div class="stop ${done[k]?"done":""}"><input type="checkbox" data-k="${k}" ${done[k]?"checked":""} aria-label="Selesai: ${esc(s[1])}"><div><div class="tm">${s[0]}</div><div class="nm">${s[1]}</div>${s[2]?`<div class="bl">${s[2]}</div>`:""}</div><a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s[3])}">Peta</a></div>`}).join("")+
+`<textarea id="nt" rows="3" placeholder="Catatan hari ini" aria-label="Catatan hari ini">${esc(notes[sel]||"")}</textarea>`;
+$("nt").oninput=e=>{notes[sel]=e.target.value;S("notes",notes);P()};prog()}
+$("day").onchange=e=>{const k=e.target.dataset.k;if(k){done[k]=e.target.checked;S("done",done);P();day()}};
+function prog(){let n=0,t=0;D.forEach((x,i)=>x.s.forEach((_,j)=>{t++;if(done[i+"-"+j])n++}));$("pt").textContent=`${n} dari ${t} agenda selesai`;$("pb").style.width=(t?n/t*100:0)+"%"}
+// countdown (Tashkent UTC+5)
+const T0=new Date("2026-11-22T00:40:00+05:00");
+function tick(){const n=new Date(),ms=T0-n;
+if(ms>0){const s=Math.floor(ms/1e3);$("cd").innerHTML=[[Math.floor(s/86400),"hari"],[Math.floor(s%86400/3600),"jam"],[Math.floor(s%3600/60),"menit"],[s%60,"detik"]].map(a=>`<div><b>${a[0]}</b><span>${a[1]}</span></div>`).join("")}
+else $("cd").innerHTML='<div><b>Selamat jalan!</b><span>Perjalanan sudah dimulai</span></div>';
+const f=z=>n.toLocaleTimeString("id-ID",{timeZone:z,hour:"2-digit",minute:"2-digit"});$("ck1").textContent=f("Asia/Tashkent");$("ck2").textContent=f("Asia/Jakarta")}
+tick();setInterval(tick,1000);
+// packing
+let pk=L("pack",["Paspor dan tiket pesawat","Jaket tebal dan thermal","Sarung tangan dan kupluk","Sepatu anti licin","Power bank","Adaptor colokan tipe C/F","Uang tunai untuk ditukar","Obat pribadi","Fotokopi dokumen","Screenshot tiket kereta"].map(t=>({t,d:0})));
+function pack(){$("pl").innerHTML=pk.map((p,i)=>`<li class="chk"><input type="checkbox" data-i="${i}" ${p.d?"checked":""} aria-label="${esc(p.t)}"><span style="${p.d?"text-decoration:line-through;opacity:.6":""}">${esc(p.t)}</span><button class="btn ghost x" data-r="${i}" aria-label="Hapus ${esc(p.t)}">Hapus</button></li>`).join("");S("pack",pk);P()}
+$("pl").onclick=e=>{const r=e.target.dataset.r;if(r!==undefined){pk.splice(+r,1);pack()}};
+$("pl").onchange=e=>{const i=e.target.dataset.i;if(i!==undefined){pk[i].d=e.target.checked?1:0;pack()}};
+$("pf").onsubmit=e=>{e.preventDefault();const v=$("pi").value.trim();if(v){pk.push({t:v,d:0});$("pi").value="";pack()}};
+// expenses
+let ex=L("exp",[]);$("rate").value=L("rate",1.3);
+const fm=n=>Math.round(n).toLocaleString("id-ID");
+function exp(){const r=+$("rate").value||0;$("el2").innerHTML=ex.map((x,i)=>`<li class="chk"><span>${esc(x.l)}</span><span class="x">${fm(x.a)} UZS (Rp ${fm(x.a*r)})</span><button class="btn ghost" data-r="${i}" aria-label="Hapus ${esc(x.l)}">Hapus</button></li>`).join("")||'<li class="chk wx">Belum ada pengeluaran. Catat yang pertama di atas.</li>';
+const t=ex.reduce((a,x)=>a+x.a,0);$("et").textContent=`Total: ${fm(t)} UZS = Rp ${fm(t*r)}`;S("exp",ex);S("rate",r);P()}
+$("rate").oninput=exp;
+$("el2").onclick=e=>{const r=e.target.dataset.r;if(r!==undefined){ex.splice(+r,1);exp()}};
+$("ef").onsubmit=e=>{e.preventDefault();const l=$("el").value.trim(),a=+$("ea").value;if(l&&a>0){ex.push({l,a});$("el").value=$("ea").value="";exp()}};
+// theme
+$("th").onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()==="#0d1a26";r.dataset.theme=d?"light":"dark";$("th").textContent=d?"Mode gelap":"Mode terang";S("theme",r.dataset.theme)};
+const th=L("theme",null);if(th){document.documentElement.dataset.theme=th;$("th").textContent=th==="dark"?"Mode terang":"Mode gelap"}
+// weather (Open-Meteo, no key)
+fetch("https://api.open-meteo.com/v1/forecast?latitude=41.31,39.65,39.77&longitude=69.28,66.96,64.42&daily=temperature_2m_max,temperature_2m_min&timezone=auto&start_date=2026-11-22&end_date=2026-11-28")
+.then(r=>r.json()).then(j=>{wx=Array.isArray(j)?j:null;day()}).catch(()=>{});
+// Firebase Firestore sync
+const FB={apiKey:"AIzaSyAIsOqk-lwAR1i9rGq750Vm7NL212v4rzA",authDomain:"uzbek-trip.firebaseapp.com",projectId:"uzbek-trip",appId:"1:938334601053:web:2f49c75d0ca290e09c32b4"};
+const V="10.14.1",G="https://www.gstatic.com/firebasejs/"+V+"/";
+let cloud=null,code=L("trip",null),remote=false,pt=0;
+const st=(t,c)=>{$("sy").textContent=t;$("sy").dataset.s=c};
+const state=()=>({done,notes,pack:pk,exp:ex,rate:+$("rate").value||0});
+function P(){if(remote||!cloud)return;clearTimeout(pt);pt=setTimeout(()=>{cloud.set(cloud.ref,state(),{merge:true}).then(()=>st("Tersinkron","on")).catch(()=>st("Gagal kirim, tersimpan di perangkat","off"))},600)}
+function apply(d){remote=true;if(d.done)done=d.done;if(d.notes)notes=d.notes;if(d.pack)pk=d.pack;if(d.exp)ex=d.exp;if(d.rate)$("rate").value=d.rate;S("done",done);S("notes",notes);
+if(document.activeElement.id!=="nt")day();pack();exp();remote=false}
+async function initCloud(){
+if(FB.apiKey.startsWith("ISI")){st("Mode offline: data hanya di perangkat ini","off");return}
+const u=new URLSearchParams(location.search).get("trip");if(u){code=u.trim();S("trip",code)}
+if(!code){code=(prompt("Buat atau masukkan kode trip (min 8 karakter, sama di semua perangkat):")||"").trim();if(code.length<8){code=null;st("Kode trip belum diisi, muat ulang halaman","off");return}S("trip",code)}
+if(code.length<8){st("Kode trip terlalu pendek","off");return}
+try{st("Menyambung...","off");
+const [a,f]=await Promise.all([import(G+"firebase-app.js"),import(G+"firebase-firestore.js")]);
+const ref=f.doc(f.getFirestore(a.initializeApp(FB)),"trips",code);cloud={ref,set:f.setDoc};
+f.onSnapshot(ref,s=>{if(s.metadata.hasPendingWrites)return;const d=s.data();if(d){apply(d);st("Tersinkron","on")}else P()},()=>st("Gagal sinkron, tersimpan di perangkat","off"))
+}catch(e){st("Gagal menyambung, data tersimpan di perangkat","off")}}
+$("sh").onclick=()=>{if(!code)return alert("Kode trip belum diatur.");const l=location.origin+location.pathname+"?trip="+encodeURIComponent(code);(navigator.clipboard?navigator.clipboard.writeText(l):Promise.reject()).then(()=>alert("Tautan disalin. Kirim ke keluarga."),()=>prompt("Salin tautan ini:",l))};
+tabs();day();pack();exp();initCloud();
+</script>
+</body>
+</html>
